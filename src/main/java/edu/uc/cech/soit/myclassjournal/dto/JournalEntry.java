@@ -4,6 +4,6 @@ import lombok.Data;
 
 public @Data
 class JournalEntry {
-    String notes;
-    String date;
+    private String notes;
+    private String date;
 }

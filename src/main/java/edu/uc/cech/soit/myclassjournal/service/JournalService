@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Component
-public class journalService implements IJournalService {
+public class JournalService implements IJournalService {
 
     private List<JournalEntry> entries = new ArrayList<>();
 
@@ -21,7 +21,4 @@ public class journalService implements IJournalService {
     public List<JournalEntry> fetchAll() {
         return this.entries;
     }
-
-    @Override
-    public List<JournalEntry> fetchByDate(String date){return this.entries.stream().filter(x -> x.getDate().equals(date)).collect(Collectors.toList());}
 }
