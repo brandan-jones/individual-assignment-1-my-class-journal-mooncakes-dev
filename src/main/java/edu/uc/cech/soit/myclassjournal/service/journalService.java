@@ -5,11 +5,9 @@ import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Component
-public class JournalService implements IJournalService {
-
+public class journalService implements IJournalService {
     private List<JournalEntry> entries = new ArrayList<>();
 
     @Override
@@ -22,3 +20,4 @@ public class JournalService implements IJournalService {
         return this.entries;
     }
 }
+

@@ -1,9 +1,14 @@
 package edu.uc.cech.soit.myclassjournal;
 
 import edu.uc.cech.soit.myclassjournal.dto.JournalEntry;
+import edu.uc.cech.soit.myclassjournal.service.IJournalService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 public class MyClassJournalController {
+
+    @Autowired
+    IJournalService journalService;
     /**
      * Handle the / endpoint
      * @return

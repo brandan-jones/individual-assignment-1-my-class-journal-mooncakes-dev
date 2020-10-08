@@ -38,7 +38,7 @@ class MyclassjournalApplicationTests {
     }
 
     /**
-     * Validate that the JournalService can save and return Journal Entries.
+     * Validate that the journalService.java can save and return Journal Entries.
      */
     @Test
     void verifyAddAndRemoveJournalEntries() {
